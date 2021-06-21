@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>download_database_21022.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,14 +49,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmSistemavdc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmSistemavdc.Designer.cs">
+      <DependentUpon>FrmSistemavdc.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmSistemavdc.resx">
+      <DependentUpon>FrmSistemavdc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +68,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +82,58 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_find_lupa_21889.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adicionar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calcular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_10965.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="download_database_21022.ico" />
+    <None Include="Resources\search_find_user_16727.png" />
+    <None Include="Resources\binoculars_icon-icons.com_51235.png" />
+    <None Include="Resources\xmag_search_find_export_locate_5984.png" />
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Win_Altera_virtualdc\Win_Altera_virtualdc\Win_Altera_virtualdc.csproj">
+      <Project>{0a11ffa6-a4ff-40f9-bb14-71c230a23f92}</Project>
+      <Name>Win_Altera_virtualdc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Win_Consulta_Virtualdc\Win_Consulta_Virtualdc\Win_Consulta_Virtualdc.csproj">
+      <Project>{134cb062-9564-4c51-b4c5-73c1ff78f7db}</Project>
+      <Name>Win_Consulta_Virtualdc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Win_Excluir_virtualdc\Win_Excluir_virtualdc\Win_Excluir_virtualdc.csproj">
+      <Project>{905d114d-d0e3-4cc3-a1ab-2ef5306e62df}</Project>
+      <Name>Win_Excluir_virtualdc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Win_Exer_Virtualdc\Win_Exer_Virtualdc\Win_Exer_Virtualdc.csproj">
+      <Project>{e25da1c9-e0e8-409c-a725-baa3f4250210}</Project>
+      <Name>Win_Exer_Virtualdc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Win_Incluir_virtualdc\Win_Incluir_virtualdc\Win_Incluir_virtualdc.csproj">
+      <Project>{267c3ec5-1dac-4be0-8d0b-d8db6e997ad9}</Project>
+      <Name>Win_Incluir_virtualdc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Win_Navega_virtualdc\Win_Navega_virtualdc\Win_Navega_virtualdc.csproj">
+      <Project>{7f73bfcd-2f70-4701-b6b7-8eb90d07f803}</Project>
+      <Name>Win_Navega_virtualdc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Win_Relatorio_virtualdc_08_06_2021\Win_Relatorio_virtualdc_08_06_2021\Win_Relatorio_virtualdc_08_06_2021.csproj">
+      <Project>{35d05017-ef8a-411c-809e-e6720bab9eb2}</Project>
+      <Name>Win_Relatorio_virtualdc_08_06_2021</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
